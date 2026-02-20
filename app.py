@@ -35,6 +35,20 @@ import os
 #     unsafe_allow_html=True
 # )
 
+
+# ====================================dont touch upper ===================
+
+st.set_page_config(layout="wide")
+
+st.markdown("""
+<style>
+.block-container {
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.markdown("""
 <style>
 .hero {
@@ -211,6 +225,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
