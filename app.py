@@ -34,7 +34,7 @@ extracurricular_involvement = st.selectbox("Extracurricular Involvement", ["High
 # NUMERICAL INPUTS
 # =======================
 
-student_id = st.number_input_input("Student ID")
+student_id = st.number_input("Student ID")
 cgpa = st.number_input("CGPA", 0.0, 10.0, 7.0)
 tenth_percentage = st.number_input("10th Percentage", 0.0, 100.0, 75.0)
 twelfth_percentage = st.number_input("12th Percentage", 0.0, 100.0, 72.0)
@@ -99,4 +99,5 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
