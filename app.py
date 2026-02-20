@@ -4,118 +4,48 @@ import joblib
 import os
 
 # HEADING
-# st.set_page_config(page_title="India Engineering Student Placement Prediction", page_icon="🎓")
+st.set_page_config(page_title="India Engineering Student Placement Prediction", page_icon="🎓")
 
-# st.set_page_config(page_title="India Engineering Student Placement Prediction")
-# st.markdown(
-#     """
-#     <div style="
-#         background-color:#fff3cd;
-#         padding:20px;
-#         border-radius:10px;
-#         margin-bottom:25px;
-#         text-align:center;
-#     ">
-#         <h1 style="
-#             color:#856404;
-#             font-weight:800;
-#             margin:0;
-#         ">
-#             India Engineering Student Placement Prediction
-#         </h1>
-#         <p style="
-#             color:#856404;
-#             margin-top:10px;
-#             font-size:16px;
-#         ">
-#             Predict placement outcomes using academic, skill, and lifestyle factors
-#         </p>
-#     </div>
-#     """,
-#     unsafe_allow_html=True
-# )
+st.set_page_config(page_title="India Engineering Student Placement Prediction")
+st.markdown(
+    """
+    <div style="
+        background-color:#fff3cd;
+        padding:20px;
+        border-radius:10px;
+        margin-bottom:25px;
+        text-align:center;
+    ">
+        <h1 style="
+            color:#856404;
+            font-weight:800;
+            margin:0;
+        ">
+            India Engineering Student Placement Prediction
+        </h1>
+        <p style="
+            color:#856404;
+            margin-top:10px;
+            font-size:16px;
+        ">
+            Predict placement outcomes using academic, skill, and lifestyle factors
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
 # ====================================dont touch upper ===================
 
-import streamlit as st
 
-# ---------- Page Config (ONLY ONCE) ----------
-st.set_page_config(
-    page_title="India Engineering Student Placement Prediction",
-    page_icon="🎓",
-    layout="wide"
-)
 
-# ---------- Global Styles + Header ----------
-st.markdown("""
-<style>
-/* Remove Streamlit default constraints */
-.block-container {
-    padding-top: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    max-width: 100%;
-}
 
-/* Pale white background everywhere */
-body, .stApp {
-    background-color: #f9fafb;
-}
 
-/* Horizontal header layout */
-.header {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    margin-bottom: 2.5rem;
-}
 
-/* Divider lines */
-.header-line {
-    height: 1px;
-    background-color: #d1d5db;
-}
 
-/* Center content */
-.header-content {
-    text-align: center;
-    padding: 0 2rem;
-}
 
-/* Main heading */
-.header-content h1 {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 800;
-    color: #111827;
-}
 
-/* Subtitle */
-.header-content p {
-    margin-top: 0.6rem;
-    font-size: 1.1rem;
-    color: #4b5563;
-}
-</style>
-
-<div class="header">
-    <div class="header-line"></div>
-
-    <div class="header-content">
-        <h1>India Engineering Student Placement Prediction</h1>
-        <p>
-            Predict placement outcomes using academic, skill, and lifestyle factors
-        </p>
-    </div>
-
-    <div class="header-line"></div>
-</div>
-""", unsafe_allow_html=True)
-
-# # ---------- Your App Starts Here ----------
-# gender = st.selectbox("Gender", ["Male", "Female"])
-# branch = st.selectbox("Branch", ["CSE", "ECE", "EEE", "ME", "CE"])
 
 
 # ============================
@@ -220,6 +150,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
