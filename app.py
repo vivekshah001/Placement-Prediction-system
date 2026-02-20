@@ -3,37 +3,37 @@ import pandas as pd
 import joblib
 import os
 
-# HEADING
-# st.set_page_config(page_title="India Engineering Student Placement Prediction", page_icon="🎓")
+HEADING
+st.set_page_config(page_title="India Engineering Student Placement Prediction", page_icon="🎓")
 
-# st.set_page_config(page_title="India Engineering Student Placement Prediction")
-# st.markdown(
-#     """
-#     <div style="
-#         background-color:#fff3cd;
-#         padding:20px;
-#         border-radius:10px;
-#         margin-bottom:25px;
-#         text-align:center;
-#     ">
-#         <h1 style="
-#             color:#856404;
-#             font-weight:800;
-#             margin:0;
-#         ">
-#             India Engineering Student Placement Prediction
-#         </h1>
-#         <p style="
-#             color:#856404;
-#             margin-top:10px;
-#             font-size:16px;
-#         ">
-#             Predict placement outcomes using academic, skill, and lifestyle factors
-#         </p>
-#     </div>
-#     """,
-#     unsafe_allow_html=True
-# )
+st.set_page_config(page_title="India Engineering Student Placement Prediction")
+st.markdown(
+    """
+    <div style="
+        background-color:#fff3cd;
+        padding:20px;
+        border-radius:10px;
+        margin-bottom:25px;
+        text-align:center;
+    ">
+        <h1 style="
+            color:#856404;
+            font-weight:800;
+            margin:0;
+        ">
+            India Engineering Student Placement Prediction
+        </h1>
+        <p style="
+            color:#856404;
+            margin-top:10px;
+            font-size:16px;
+        ">
+            Predict placement outcomes using academic, skill, and lifestyle factors
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
 # ====================================dont touch upper ===================
@@ -143,6 +143,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
