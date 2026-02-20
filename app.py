@@ -39,64 +39,6 @@ import os
 # ====================================dont touch upper ===================
 
 
-st.set_page_config(
-    page_title="India Engineering Student Placement Prediction",
-    page_icon="🎓",
-    layout="wide"
-)
-
-st.markdown("""
-<style>
-/* Kill Streamlit padding */
-.block-container {
-    padding-top: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    max-width: 100%;
-}
-
-/* Pale white background everywhere */
-body, .stApp {
-    background-color: #f9fafb;
-}
-
-/* Horizontal header */
-.header {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    margin-bottom: 2.5rem;
-}
-
-/* Divider lines */
-.header-line {
-    height: 1px;
-    background-color: #d1d5db;
-}
-
-/* Text block */
-.header-content {
-    text-align: center;
-    padding: 0 2rem;
-}
-
-/* Heading */
-.header-content h1 {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 800;
-    color: #111827;
-}
-
-/* Subtitle */
-.header-content p {
-    margin-top: 0.6rem;
-    font-size: 1.1rem;
-    color: #4b5563;
-}
-</style>
-""", unsafe_allow_html=True)
-
 
 
 # ============================
@@ -201,6 +143,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
