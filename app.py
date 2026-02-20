@@ -92,23 +92,42 @@ df = pd.DataFrame({
     "internet_access": [internet_access],
     "family_income_level": [family_income_level],
     "extracurricular_involvement": [extracurricular_involvement],
-    "student_id": [student_id],
+
+    "Student_ID": [student_id],  # CASE FIXED
     "cgpa": [cgpa],
     "tenth_percentage": [tenth_percentage],
     "twelfth_percentage": [twelfth_percentage],
     "backlogs": [backlogs],
     "study_hours_per_day": [study_hours_per_day],
-    "attendence_percentage": [attendence_percentage],
+    "attendance_percentage": [attendence_percentage],  # SPELLING FIXED
+
     "projects_completed": [projects_completed],
     "internships_completed": [internships_completed],
-    "coding_skills_rating": [coding_skills_rating],
-    "communication_skills_rating": [communication_skills_rating],
-    "aptitude_skills_rating": [aptitude_skills_rating],
-    "hackathon_participation": [hackathon_participation],
+
+    "coding_skill_rating": [coding_skills_rating],  # NAME FIXED
+    "communication_skill_rating": [communication_skills_rating],  # NAME FIXED
+    "aptitude_skill_rating": [aptitude_skills_rating],  # NAME FIXED
+
+    "hackathons_participated": [hackathon_participation],  # NAME FIXED
     "certifications_count": [certifications_count],
-    "sleep_hours_per_night": [sleep_hours_per_night],
+    "sleep_hours": [sleep_hours_per_night],  # NAME FIXED
     "stress_level": [stress_level]
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# prediction==================================================
 
 if st.button("Predict Placement"):
     try:
@@ -126,6 +145,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
