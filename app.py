@@ -7,45 +7,31 @@ import os
 # st.set_page_config(page_title="India Engineering Student Placement Prediction", page_icon="🎓")
 
 st.set_page_config(page_title="India Engineering Student Placement Prediction")
-
-# =======================
-# UI THEME / CSS
-# =======================
 st.markdown(
     """
-    <style>
-    .stApp {
-        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-        color: white;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-
-
-with col_title:
-    st.markdown(
-        """
-        <style>
-        .main-title {
-            font-size: 64px;
-            font-weight: 900;
-            color: white;
-            margin-top: -15px;
-        }
-        </style>
-
-        <div class="main-title">
+    <div style="
+        background-color:#fff3cd;
+        padding:20px;
+        border-radius:10px;
+        margin-bottom:25px;
+        text-align:center;
+    ">
+        <h1 style="
+            color:#856404;
+            font-weight:800;
+            margin:0;
+        ">
             India Engineering Student Placement Prediction
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-st.markdown(
-    "<hr style='border:1px solid rgba(255,255,255,0.3); margin-bottom:30px;'>",
+        </h1>
+        <p style="
+            color:#856404;
+            margin-top:10px;
+            font-size:16px;
+        ">
+            Predict placement outcomes using academic, skill, and lifestyle factors
+        </p>
+    </div>
+    """,
     unsafe_allow_html=True
 )
 
@@ -151,6 +137,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
