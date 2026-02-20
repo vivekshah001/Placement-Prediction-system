@@ -4,10 +4,30 @@ import joblib
 import os
 
 # HEADING
-st.set_page_config(page_title="India Engineering Student Placement Prediction", page_icon="🎓")
+# st.set_page_config(page_title="India Engineering Student Placement Prediction", page_icon="🎓")
 
+st.set_page_config(page_title="India Engineering Student Placement Prediction")
+
+# =======================
+# UI THEME / CSS
+# =======================
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+# ============================
 # MODEL LOADING
-
+# ============================
 @st.cache_resource
 def load_artifacts():
     model = joblib.load("model (1).pkl")
@@ -107,6 +127,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
