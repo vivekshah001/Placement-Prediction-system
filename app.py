@@ -38,6 +38,8 @@ import os
 
 # ====================================dont touch upper ===================
 
+
+
 st.set_page_config(layout="wide")
 
 st.markdown("""
@@ -46,15 +48,11 @@ st.markdown("""
     padding: 0 !important;
     max-width: 100% !important;
 }
-</style>
-""", unsafe_allow_html=True)
 
-st.markdown("""
-<style>
 .hero {
     width: 100vw;
     min-height: 45vh;
-    background: linear-gradient(135deg, #f5c542, #ffdd75);
+    background: #ffd966;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
@@ -76,7 +74,7 @@ st.markdown("""
     font-size: 3.5rem;
     font-weight: 800;
     color: #111;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 .hero-content p {
@@ -86,7 +84,11 @@ st.markdown("""
     margin: auto;
 }
 </style>
+""", unsafe_allow_html=True)
 
+
+
+st.markdown("""
 <div class="hero">
     <div class="hero-line"></div>
 
@@ -101,12 +103,6 @@ st.markdown("""
     <div class="hero-line"></div>
 </div>
 """, unsafe_allow_html=True)
-
-
-
-
-
-
 
 
 
@@ -225,6 +221,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
