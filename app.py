@@ -10,7 +10,7 @@ st.set_page_config(page_title="India Engineering Student Placement Prediction")
 st.markdown(
     """
     <div style="
-        background-color:#fff3cd;
+        background-color:#dacdff;
         padding:20px;
         border-radius:10px;
         margin-bottom:25px;
@@ -150,6 +150,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
