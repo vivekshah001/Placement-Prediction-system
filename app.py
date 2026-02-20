@@ -6,34 +6,143 @@ import os
 # HEADING
 # st.set_page_config(page_title="India Engineering Student Placement Prediction", page_icon="🎓")
 
-st.set_page_config(page_title="India Engineering Student Placement Prediction")
-st.markdown(
-    """
-    <div style="
-        background-color:#fff3cd;
-        padding:20px;
-        border-radius:10px;
-        margin-bottom:25px;
-        text-align:center;
-    ">
-        <h1 style="
-            color:#856404;
-            font-weight:800;
-            margin:0;
-        ">
-            India Engineering Student Placement Prediction
-        </h1>
-        <p style="
-            color:#856404;
-            margin-top:10px;
-            font-size:16px;
-        ">
-            Predict placement outcomes using academic, skill, and lifestyle factors
-        </p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+# st.set_page_config(page_title="India Engineering Student Placement Prediction")
+# st.markdown(
+#     """
+#     <div style="
+#         background-color:#fff3cd;
+#         padding:20px;
+#         border-radius:10px;
+#         margin-bottom:25px;
+#         text-align:center;
+#     ">
+#         <h1 style="
+#             color:#856404;
+#             font-weight:800;
+#             margin:0;
+#         ">
+#             India Engineering Student Placement Prediction
+#         </h1>
+#         <p style="
+#             color:#856404;
+#             margin-top:10px;
+#             font-size:16px;
+#         ">
+#             Predict placement outcomes using academic, skill, and lifestyle factors
+#         </p>
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
+
+
+
+
+
+import streamlit as st
+
+# 1. Injecting 2026 Premium CSS
+st.markdown("""
+<style>
+    /* Deep midnight gradient background */
+    .stApp {
+        background: radial-gradient(circle at top left, #0f172a, #020617);
+        font-family: 'Inter', sans-serif;
+    }
+    
+    /* Liquid Glass Header Card */
+    .premium-header {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 24px;
+        padding: 40px;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    
+    /* Gradient Text for Title */
+    .premium-title {
+        background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+    
+    /* Sleek Subtitle */
+    .premium-subtitle {
+        color: #94a3b8;
+        font-size: 1.15rem;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    /* Neumorphic/Glassy Dropdown Menus */
+    div[data-baseweb="select"] > div {
+        background-color: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+    
+    /* Glowing Hover Effect for Inputs */
+    div[data-baseweb="select"] > div:hover {
+        border-color: #818cf8;
+        box-shadow: 0 0 15px rgba(129, 140, 248, 0.2);
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Clean Input Labels */
+    .stSelectbox label {
+        color: #cbd5e1 !important;
+        font-weight: 500;
+        font-size: 0.95rem;
+        padding-bottom: 5px;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# 2. Render the new Liquid Glass Header
+st.markdown("""
+<div class="premium-header">
+    <div class="premium-title">India Engineering Student<br>Placement Prediction</div>
+    <div class="premium-subtitle">Predict placement outcomes using academic, skill, and lifestyle factors</div>
+</div>
+""", unsafe_allow_html=True)
+
+# 3. Your standard Streamlit inputs go here
+gender = st.selectbox("Gender", ["Male", "Female", "Other"])
+branch = st.selectbox("Branch", ["CSE", "ECE", "Mechanical", "Civil"])
+# ... rest of your code ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # ============================
 # MODEL LOADING
@@ -137,6 +246,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
