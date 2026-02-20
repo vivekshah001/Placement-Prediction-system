@@ -10,8 +10,8 @@ st.set_page_config(page_title="India Engineering Student Placement Prediction", 
 
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load("C:\\Users\\user\\Downloads\\model (1).pkl")
-    ct = joblib.load("C:\\Users\\user\\Downloads\\enc_transformer.pkl")
+    model = joblib.load("model (1).pkl")
+    ct = joblib.load("enc_transformer.pkl")
     return model, ct
 
 model, ct = load_artifacts()
@@ -99,3 +99,4 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
