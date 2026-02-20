@@ -25,8 +25,8 @@ st.markdown(
         </h1>
         <p style="
             color:#856404;
-            margin-top:10px;
-            font-size:16px;
+            margin-top:2px;
+            font-size:26px;
         ">
             Predict placement outcomes using academic, skill, and lifestyle factors
         </p>
@@ -150,6 +150,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
