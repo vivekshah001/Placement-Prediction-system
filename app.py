@@ -25,6 +25,30 @@ st.markdown(
 
 
 
+with col_title:
+    st.markdown(
+        """
+        <style>
+        .main-title {
+            font-size: 64px;
+            font-weight: 900;
+            color: white;
+            margin-top: -15px;
+        }
+        </style>
+
+        <div class="main-title">
+            India Engineering Student Placement Prediction
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+st.markdown(
+    "<hr style='border:1px solid rgba(255,255,255,0.3); margin-bottom:30px;'>",
+    unsafe_allow_html=True
+)
+
 # ============================
 # MODEL LOADING
 # ============================
@@ -127,6 +151,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
