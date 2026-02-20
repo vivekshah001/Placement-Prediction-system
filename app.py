@@ -12,7 +12,7 @@ st.markdown(
     <div style="
         background-color:#dacdff;
         padding:20px;
-        border-radius:10px;
+        border-radius:20px;
         margin-bottom:25px;
         text-align:center;
     ">
@@ -150,6 +150,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
