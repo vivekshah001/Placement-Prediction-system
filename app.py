@@ -41,73 +41,6 @@ import os
 
 
 
-
-
-st.set_page_config(layout="wide")
-
-st.markdown("""
-<style>
-.block-container {
-    padding: 0 !important;
-    max-width: 100% !important;
-}
-
-.hero {
-    width: 100vw;
-    min-height: 45vh;
-    background: #ffd966;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 3rem 4rem;
-    box-sizing: border-box;
-}
-
-.hero-line {
-    height: 2px;
-    background: rgba(0,0,0,0.6);
-}
-
-.hero-content {
-    text-align: center;
-    padding: 0 2rem;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: #111;
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    color: #222;
-    max-width: 700px;
-    margin: auto;
-}
-</style>
-""", unsafe_allow_html=True)
-
-
-st.markdown("""
-<div class="hero">
-    <div class="hero-line"></div>
-
-    <div class="hero-content">
-        <h1>India Engineering Student Placement Prediction</h1>
-        <p>
-            Predict placement outcomes using academic performance,
-            technical skills, and lifestyle factors
-        </p>
-    </div>
-
-    <div class="hero-line"></div>
-</div>
-""", unsafe_allow_html=True)
-
-
-
 # ============================
 # MODEL LOADING
 # ============================
@@ -210,6 +143,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
