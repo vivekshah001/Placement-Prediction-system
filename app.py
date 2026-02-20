@@ -56,34 +56,6 @@ stress_level = st.number_input("Stress Level (1-10)", 1, 10, 5)
 # total inputs(24)
 #==============
 
-# df= pd.DataFrame({
-#     "gender":gender,
-#     "branch": branch,
-#     "city_tier": city_tier,
-#     "part_time_job": part_time_job,
-#     "internet_access": internet_access,
-#     "family_income_level": family_income_level,
-#     "extracurricular_involvement": extracurricular_involvement,
-#     "student_id": student_id,
-#     "cgpa": cgpa,
-#     "tenth_percentage": tenth_percentage,
-#     "twelfth_percentage": twelfth_percentage,
-#     "backlogs": backlogs,
-#     "study_hours_per_day": study_hours_per_day,
-#     "attendence_percentage": attendence_percentage,
-#     "projects_completed": projects_completed,
-#     "internships_completed": internships_completed,
-#     "coding_skills_rating": coding_skills_rating,
-#     "communication_skills_rating": communication_skills_rating,
-#     "aptitude_skills_rating": aptitude_skills_rating,
-#     "hackathon_participation": hackathon_participation,
-#     "certifications_count": certifications_count,
-#     "sleep_hours_per_night": sleep_hours_per_night,
-#     "stress_level": stress_level
-# })
-
-
-
 df = pd.DataFrame({
     "gender": [gender],
     "branch": [branch],
@@ -115,19 +87,9 @@ df = pd.DataFrame({
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# prediction==================================================
+# ==================================
+#  prediction
+# ==================================
 
 if st.button("Predict Placement"):
     try:
@@ -145,6 +107,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
