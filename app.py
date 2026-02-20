@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import os
 
-HEADING
+# HEADING
 st.set_page_config(page_title="India Engineering Student Placement Prediction", page_icon="🎓")
 
 st.set_page_config(page_title="India Engineering Student Placement Prediction")
@@ -143,6 +143,7 @@ if st.button("Predict Placement"):
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
         
+
 
 
 
