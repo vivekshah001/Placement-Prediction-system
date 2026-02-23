@@ -7,3 +7,6 @@ The model uses Logistic Regression, with categorical encoding, class imbalance h
 
 The workflow is exploratory → preprocessing → resampling → modeling → evaluation.
 No magic. Just fundamentals done (mostly) right.
+
+
+app link--->https://placement-prediction-system-fkwswf4hxztjds4f3hse7k.streamlit.app/
